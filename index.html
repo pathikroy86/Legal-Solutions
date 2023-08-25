@@ -11,32 +11,7 @@
 </head>
 
 <body class="container-fluid container-md">
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Recipient:</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                        <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Send message</button>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!--Header-->
     <header>
         <!--Navigation menu-->
@@ -73,7 +48,6 @@
                         <button type="button" class="button-clr border-0 text-white fw-semibold px-3 py-2 rounded-1"
                             data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Free
                             Consultancy</button>
-
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog">
@@ -99,7 +73,9 @@
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
                                             data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="button-clr">Send message</button>
+                                        <button type="button"
+                                            class="button-clr px-3 py-2 border-0 rounded-1 text-white">Send
+                                            message</button>
                                     </div>
                                 </div>
                             </div>
@@ -123,12 +99,67 @@
                     class="px-5 py-2 me-2 rounded-1 mb-3">
                 <button type="button"
                     class="btn btn-primary px-4 py-2 text fs-6 rounded-1 mb-1 button-clr border-0">Search</button>
-
             </div>
         </div>
     </header>
     <!--Main-->
-    <main>
+    <main class="mt-5">
+        <!--Legal practice area-->
+        <h1 class="text-center mb-3">The legal Practice Area</h1>
+        <p class="text-center mb-5"> We encompass a wide range of specialized areas, each dealing with specific aspects
+            of
+            law such as criminal
+            cases, <br> civil disputes, corporate transactions, family matters, and more.</p>
+        <div class="container-md text-center mb-5">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 p-5 border-end border-bottom">
+                    <img class="py-4" src="images/business.png" alt="">
+                    <h3 class="mb-3">Business Law</h3>
+                    <p class="mb-4">Focuses on legal matters related to businesses and corporations, including mergers
+                        and
+                        acquisitions, corporate governance, intellectual property, and regulatory compliance.</p>
+                    <a href="#"><img src="images/Frame.png" alt=""></a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-5 border-bottom border-end criminal-law-gradient">
+                    <img class="py-4" src="images/criminal.png" alt="">
+                    <h3 class="mb-3">Criminal Law</h3>
+                    <p class="mb-4">Involves cases where individuals or entities are charged with violating laws and
+                        regulations. This can include offenses such as theft, assault, drug-related crimes, and more.
+                    </p>
+                    <a href="#"><img src="images/Frame.png" alt=""></a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-5 border-bottom">
+                    <img class="py-4" src="images/business.png" alt="">
+                    <h3 class="mb-3">Civil Law</h3>
+                    <p class="mb-4">Encompasses disputes between individuals, organizations, or entities over matters
+                        such as contracts, property, personal injury, and family issues like divorce and child custody.
+                    </p>
+                    <a href="#"><img src="images/Frame.png" alt=""></a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-5 border-end">
+                    <img class="py-4" src="images/business.png" alt="">
+                    <h3 class="mb-3">Employment Law</h3>
+                    <p class="mb-4">Deals with matters related to the employer-employee relationship, such as workplace
+                        discrimination, wrongful termination, wage disputes, and labor law compliance.</p>
+                    <a href="#"><img src="images/Frame.png" alt=""></a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-5 border-end">
+                    <img class="py-4" src="images/business.png" alt="">
+                    <h3 class="mb-3">Family Law</h3>
+                    <p class="mb-4">Deals with issues within families, such as divorce, child custody, adoption,
+                        alimony, and prenuptial agreements.</p>
+                    <a href="#"><img src="images/Frame.png" alt=""></a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 p-5">
+                    <img class="py-4" src="images/business.png" alt="">
+                    <h3 class="mb-3">Tax Law</h3>
+                    <p class="mb-4"> Involves matters related to taxation, including tax planning, disputes with tax
+                        authorities, and ensuring compliance with tax laws.</p>
+                    <a href="#"><img src="images/Frame.png" alt=""></a>
+                </div>
+
+            </div>
+        </div>
 
     </main>
 
