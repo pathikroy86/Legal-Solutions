@@ -11,6 +11,32 @@
 </head>
 
 <body class="container-fluid container-md">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Header-->
     <header>
         <!--Navigation menu-->
@@ -44,8 +70,41 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
+                        <button type="button" class="button-clr border-0 text-white fw-semibold px-3 py-2 rounded-1"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Free
+                            Consultancy</button>
 
-                        <button class="btn btn-success button-clr border-0" type="submit">Free Consultation</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Enter Your enquiry</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">E-mail:</label>
+                                                <input type="text" class="form-control" id="recipient-name"
+                                                    placeholder="Enter your e-mail address">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">Enquiry:</label>
+                                                <textarea class="form-control" id="message-text"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="button-clr">Send message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </form>
                 </div>
             </div>
@@ -60,7 +119,8 @@
                 <p class="mb-4">We help you achieve your legal goals. We get results. We fight for you. <br> We are your
                     legal
                     advocates. We are here to help.</p>
-                <input type="text" name="" id="" placeholder="Search your services" class="px-5 py-2 me-2 rounded-1">
+                <input type="text" name="" id="" placeholder="Search your services"
+                    class="px-5 py-2 me-2 rounded-1 mb-3">
                 <button type="button"
                     class="btn btn-primary px-4 py-2 text fs-6 rounded-1 mb-1 button-clr border-0">Search</button>
 
